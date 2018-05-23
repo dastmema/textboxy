@@ -1,4 +1,4 @@
-#region This code is not important for textboxy
+#region This code is for handling window resize
 
 /*I would usually put this code inside of a
 manager object, but to keep this lightweight
@@ -33,16 +33,22 @@ if (keyboard_check_pressed(ord("M"))) {
 }
 #endregion
 
-if (keyboard_check_pressed(vk_escape)) game_end();
-
-if (keyboard_check_pressed(ord("R"))) game_restart();
-
+/* This is textboxy code */
 if (keyboard_check_pressed(ord("F"))) {
 	var s = choose("I'm talking!", "Hey there!", "Woaoaahh!");
 	tbyReset();
 	tby(id, 2, s);
 	tbyStart();
 }
+
+#region Command stuff
+if (keyboard_check_pressed(vk_escape)) game_end();
+
+if (keyboard_check_pressed(ord("R"))) game_restart();
+#endregion
+
+#region Movement stuff
+//Very rudimentary
 
 depth = -y;
 
@@ -99,3 +105,4 @@ if (place_meeting(x, y, objBlue)) {
 		y -= 1*d;
 	}
 }
+#endregion

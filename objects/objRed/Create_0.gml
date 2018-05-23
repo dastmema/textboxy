@@ -1,4 +1,4 @@
-#region This code is not important for textboxy
+#region This code is for handling window resize
 
 windowScale = 2;
 windowScaleMax = 4;
