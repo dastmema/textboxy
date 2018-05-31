@@ -1,6 +1,6 @@
 // Draws the info boxes
 
-draw_set_font(fontDefault);
+draw_set_font(tbyDefaultFont);
 var s = 
 @"Press Enter or Space to talk to someone
 Press F at any time to say something
@@ -8,7 +8,7 @@ Press M to resize the window
 Press R to restart
 Press ESC to close";
 
-var s2 = "example for textboxy v0.1.0"
+var s2 = "example for textboxy v" + tbyVersion
 
 draw_set_color(c_black);
 draw_set_alpha(0.75);

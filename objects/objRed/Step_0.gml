@@ -35,7 +35,7 @@ if (keyboard_check_pressed(ord("M"))) {
 
 /* This is textboxy code */
 if (keyboard_check_pressed(ord("F"))) {
-	var s = choose("I'm talking!", "Hey there!", "Woaoaahh!");
+	var s = choose("I'm talking!", "Hey there!", "Woaoaahh!", "I can't\nbelieve it!");
 	tbyReset();
 	tby(id, 2, s);
 	tbyStart();
